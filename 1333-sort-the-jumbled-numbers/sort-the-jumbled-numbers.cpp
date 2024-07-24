@@ -1,7 +1,6 @@
 class Solution {
 public:
     int covertValue(vector<int>& mapping, int num){
-          long int newNum = 0;
           string s = to_string(num);
 
           for(int i=0;i<s.size();i++){
