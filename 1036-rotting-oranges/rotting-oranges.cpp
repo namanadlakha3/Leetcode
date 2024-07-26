@@ -19,7 +19,6 @@ public:
             int j = q.front().first.second;
             int time = q.front().second;
 
-            cout<<i<<","<<j<<": "<<grid[i][j]<<endl;
 
             if(grid[i][j] == 1){
             ans = max(ans,time);
