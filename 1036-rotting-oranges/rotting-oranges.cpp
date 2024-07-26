@@ -21,8 +21,7 @@ public:
 
 
             if(grid[i][j] == 1){
-            ans = max(ans,time);
-
+             ans = max(ans,time);
             }
 
             grid[i][j] = 2;
