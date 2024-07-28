@@ -1,6 +1,7 @@
 class Solution {
     public String[] sortPeople(String[] names, int[] heights) {
         List<Integer> nameList = new ArrayList<>();
+        
         for(int i=0;i<names.length;i++){
             nameList.add(i);
         }
