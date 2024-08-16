@@ -5,7 +5,7 @@ public:
         int ans = 0;
         for(int &i : time){
             int num = i%60;
-            if(num == 0) ans+=mp[0];
+            if(num == 0) ans+=mp[num];
             else ans+=mp[60-num];
 
             mp[num]++;
