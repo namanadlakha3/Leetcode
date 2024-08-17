@@ -7,7 +7,7 @@ class Solution {
             int mid = (left+right)/2;
 
             if(mid>0 && nums[mid-1]>nums[mid]) return nums[mid];
-            else if(mid>0 && nums[mid-1]<nums[0]) right = mid - 1;
+            else if(mid>0 && nums[mid]<nums[0]) right = mid - 1;
             else left = left + 1;
         }
 
