@@ -22,7 +22,6 @@ class Solution {
             else
             num+=val;
             c = current;
-            System.out.println(num);
         }
 
         return num;
