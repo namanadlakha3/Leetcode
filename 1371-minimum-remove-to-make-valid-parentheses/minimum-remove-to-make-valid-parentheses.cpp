@@ -14,6 +14,7 @@ public:
                 --count;
                 s[i]='.';
             }
+            if(count == 0) break;
         }
         string ans;
         for(int i=0;i<s.size();i++){
