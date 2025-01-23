@@ -1,18 +1,23 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int ans;
-        int count = 0;
+        int count = 1, ans = nums[0], lastMx = 0;
 
-        for(int &num: nums){
-            if(count == 0){
-                ans = num;
-            }
+        for(int i = 1;i<nums.size();i++){
+            cout<<count;
+               if(count==0){
+                ans = nums[i];
+               }
 
-           count +=  (num == ans) ? 1 : -1;
+            if(ans == nums[i])++count;
+            else --count;
+
+ cout<<count<<endl;
+            if(count==0){
+                ans = nums[i];
+               }
         }
-
-        return ans;
         
+        return ans;
     }
 };
