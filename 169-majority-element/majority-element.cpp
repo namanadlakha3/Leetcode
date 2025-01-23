@@ -9,7 +9,7 @@ public:
                 ans = num;
             }
 
-           count += (num == ans) ? 1 : -1;
+           count +=  (num == ans) ? 1 : -1;
         }
 
         return ans;
