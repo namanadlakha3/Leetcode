@@ -16,9 +16,7 @@ public:
                 ++i;
                 count = 1;
             }
-
         }
-      //  if(count>1) nums[i-1] = nums.back();
         return i;
     }
 };
