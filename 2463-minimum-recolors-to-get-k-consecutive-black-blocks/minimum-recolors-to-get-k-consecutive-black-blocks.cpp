@@ -10,7 +10,6 @@ public:
          for(int i=k;i<blocks.size();i++){
              if(blocks[i-k] == 'B' && blocks[i] == 'W') --count;
              if(blocks[i-k] == 'W' && blocks[i] == 'B') ++count;
-
              ans = min(ans, k-count);
          }
          return min(ans,k-count);
